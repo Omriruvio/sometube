@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.page {
+  background-color: #1e3055;
+  color: white;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-content {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  border-bottom: rgba(255, 255, 255, 0.25) 1px solid;
+  height: 120px;
+  width: 92%;
+  margin: auto;
+  padding-top: 54px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 213px;
+  height: 63px;
+  align-self: flex-end;
+}
+
+.header__profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 45px;
+  position: relative;
+}
+
+.header__profile-image {
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+}
+
+.header__profile-name {
+  margin: 8px 0 0;
+  color: white;
+  opacity: 50%;
+}
+
+.header__profile-cog {
+  all: unset;
+  background-image: url("../images/settings-svgrepo-com.svg");
+  background-color: transparent;
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.video-cards {
+  margin: 0 20px 0;
+}
+
+.video-cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-cards__list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.video-cards__list {
+  list-style: none;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: none;
+}
+
+.popup_active {
+  display: flex;
+}
+
+.popup__title {
+  padding: 0;
+  margin: 0;
+}
+
+.popup__window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  background-color: slategray;
+  position: relative;
+}
+
+.video-cards__close-button {
+  all: unset;
+  background-image: url("../images/close-svgrepo-com.svg");
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  fill: white;
+  cursor: pointer;
+}
