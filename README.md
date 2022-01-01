@@ -1,7 +1,7 @@
 <h1 align="center">SomeTube</h1>
 
 <div align="center">
-    <img src="./images/omri-avatar.svg" alt="Logo" style="width: 100px">
+    
   <br />
 <h3 align="center">Video playlist management site</h3>
 

@@ -135,3 +135,30 @@ body {
   fill: white;
   cursor: pointer;
 }
+
+.add-video-button {
+  all: unset;
+  cursor: pointer;
+  margin: 30px auto 0;
+  background-color: transparent;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-cards__delete {
+  width: 30px;
+  justify-self: flex-start;
+  cursor: pointer;
+}
+
+.video-cards__video-title {
+}
+
+.video-cards__info-section {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}

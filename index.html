@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
-    <div class="popup">
+    <div class="popup popup_type_profile">
       <div class="popup__window">
         <button class="video-cards__close-button"></button>
         <h2 class="popup__title">Edit Profile</h2>
         <form class="popup__form">
           <input type="text" class="popup__name-input" />
           <button class="popup__submit-button">Save</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup_type_add">
+      <div class="popup__window">
+        <button class="video-cards__close-button add-video-close-button"></button>
+        <h2 class="popup__title">Add new video</h2>
+        <form class="popup__form popup__add-video-form">
+          <input type="text" class="popup__video-title-input" />
+          <input type="url" class="popup__video-url-input" />
+          <button class="popup__submit-button popup__new-video-submit-button">Save</button>
         </form>
       </div>
     </div>
@@ -28,93 +39,30 @@
         </div>
       </header>
       <main class="main">
+        <img src="./images/video-add-button.svg" alt="add video button" class="add-video-button" />
         <section class="video-cards">
-          <ul class="video-cards__list">
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-            <li class="video-cards__card">
-              <iframe
-                src="https://www.youtube.com/embed/QWGC2KI9jwk"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="video-cards__video-title">Video title</h2>
-            </li>
-          </ul>
+          <ul class="video-cards__list"></ul>
         </section>
       </main>
       <footer class="footer"></footer>
     </div>
-    <script src="scripts/index.js"></script>
+    <template id="video-list-template">
+      <li class="video-cards__card">
+        <iframe
+          class="video-cards__iframe"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <div class="video-cards__info-section">
+          <img src="./images/delete-video-button.svg" alt="delete button" class="video-cards__delete" />
+          <h2 class="video-cards__video-title"></h2>
+          <img src="./images/like-button.svg" alt="delete button" class="video-cards__delete" />
+        </div>
+      </li>
+    </template>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
