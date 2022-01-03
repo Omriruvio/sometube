@@ -12,21 +12,21 @@
       <div class="popup__window">
         <button class="video-cards__close-button"></button>
         <h2 class="popup__title">Edit Profile</h2>
-        <form class="popup__form">
+        <form id="edit-profile-form" class="popup__form">
           <input type="text" class="popup__name-input" />
-          <button class="popup__submit-button">Save</button>
         </form>
+        <button type="submit" form="edit-profile-form" class="popup__submit-button">Save</button>
       </div>
     </div>
     <div class="popup popup_type_add">
       <div class="popup__window">
         <button class="video-cards__close-button add-video-close-button"></button>
         <h2 class="popup__title">Add new video</h2>
-        <form class="popup__form popup__add-video-form">
+        <form id="new-video-form" class="popup__form popup__add-video-form">
           <input type="text" class="popup__video-title-input" />
           <input type="url" class="popup__video-url-input" />
-          <button class="popup__submit-button popup__new-video-submit-button">Save</button>
         </form>
+        <button type="submit" form="new-video-form" class="popup__submit-button popup__new-video-submit-button">Save</button>
       </div>
     </div>
     <div class="page-content">

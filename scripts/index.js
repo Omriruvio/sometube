@@ -18,36 +18,20 @@ const addVideoButton = document.querySelector('.add-video-button');
 
 const initialCards = [
   {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
+    link: 'https://www.youtube.com/embed/Ptk_1Dc2iPY',
+    title: 'Canon in D'
   },
   {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
+    link: 'https://www.youtube.com/embed/i1nGx4DX83U',
+    title: 'Bohemian Rhapsody'
   },
   {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
+    link: 'https://www.youtube.com/embed/w_lCi8U49mY',
+    title: 'Itsy bitsy spider'
   },
   {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
-  },
-  {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
-  },
-  {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
-  },
-  {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
-  },
-  {
-    link: 'https://www.youtube.com/embed/QWGC2KI9jwk',
-    title: 'Arpo video'
+    link: 'https://www.youtube.com/embed/wV3N-wCRL2k',
+    title: 'Wheels!'
   }
 ];
 
@@ -89,9 +73,11 @@ addVideoCloseButton.addEventListener('click', () => togglePopup(addVideoPopup));
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   profileName.textContent = nameInput.value;
+  togglePopup(profilePopup);
 })
 
 addVideoButton.addEventListener('click', function (event) {
+  addVideoForm.reset();
   togglePopup(addVideoPopup);
 })
 
