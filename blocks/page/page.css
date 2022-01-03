@@ -1,5 +1,5 @@
 .page {
-  background-color: #1e3055;
+  background: radial-gradient(circle at top, rgba(14, 71, 91, 1) 0%, rgba(10, 11, 18, 1) 100%);
   color: white;
   margin: auto;
   width: 100%;
