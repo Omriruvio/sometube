@@ -1,0 +1,12 @@
+.video-cards__close-button {
+  all: unset;
+  background-image: url("../../../images/close-svgrepo-com.svg");
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  fill: white;
+  cursor: pointer;
+}

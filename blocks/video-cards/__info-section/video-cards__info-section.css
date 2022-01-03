@@ -1,0 +1,5 @@
+.video-cards__info-section {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}

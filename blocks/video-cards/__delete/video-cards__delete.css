@@ -1,0 +1,5 @@
+.video-cards__delete {
+  width: 30px;
+  justify-self: flex-start;
+  cursor: pointer;
+}

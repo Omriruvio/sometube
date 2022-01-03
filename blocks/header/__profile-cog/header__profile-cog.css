@@ -1,0 +1,11 @@
+.header__profile-cog {
+  all: unset;
+  background-image: url("../../../images/settings-svgrepo-com.svg");
+  background-color: transparent;
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}

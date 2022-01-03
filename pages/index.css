@@ -1,164 +1,25 @@
-body {
-  margin: 0;
-}
+@import url("../vendor/normalize.css");
 
-.page {
-  background-color: #1e3055;
-  color: white;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
-}
+@import url("../blocks/page/page.css");
+@import url("../blocks/page-content/page-content.css");
+@import url("../blocks/header/header.css");
+@import url("../blocks/logo/logo.css");
+@import url("../blocks/video-cards/video-cards.css");
+@import url("../blocks/popup/popup.css");
+@import url("../blocks/add-video-button/add-video-button.css");
+@import url("../blocks/main/main.css");
 
-.page-content {
-  max-width: 1280px;
-  margin: auto;
-}
+@import url("../blocks/header/__profile-wrapper/header__profile-wrapper.css");
+@import url("../blocks/header/__profile-image/header__profile-image.css");
+@import url("../blocks/header/__profile-name/header__profile-name.css");
+@import url("../blocks/header/__profile-cog/header__profile-cog.css");
+@import url("../blocks/video-cards/__card/video-cards__card.css");
+@import url("../blocks/video-cards/__list/video-cards__list.css");
+@import url("../blocks/video-cards/__delete/video-cards__delete.css");
+@import url("../blocks/video-cards/__video-title/video-cards__video-title.css");
+@import url("../blocks/video-cards/__info-section/video-cards__info-section.css");
+@import url("../blocks/video-cards/__close-button/video-cards__close-button.css");
+@import url("../blocks/popup/popup__title/popup__title.css");
+@import url("../blocks/popup/popup__window/popup__window.css");
 
-.header {
-  display: flex;
-  border-bottom: rgba(255, 255, 255, 0.25) 1px solid;
-  height: 120px;
-  width: 92%;
-  margin: auto;
-  padding-top: 54px;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 213px;
-  height: 63px;
-  align-self: flex-end;
-}
-
-.header__profile-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 45px;
-  position: relative;
-}
-
-.header__profile-image {
-  height: 68px;
-  width: 68px;
-  border-radius: 50%;
-}
-
-.header__profile-name {
-  margin: 8px 0 0;
-  color: white;
-  opacity: 50%;
-}
-
-.header__profile-cog {
-  all: unset;
-  background-image: url("../images/settings-svgrepo-com.svg");
-  background-color: transparent;
-  position: absolute;
-  top: -9px;
-  right: -9px;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-}
-
-.video-cards {
-  margin: 0 20px 0;
-}
-
-.video-cards__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-cards__list {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 100%;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.video-cards__list {
-  list-style: none;
-}
-
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  display: none;
-}
-
-.popup_active {
-  display: flex;
-}
-
-.popup__title {
-  padding: 0;
-  margin: 0;
-}
-
-.popup__window {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  width: 350px;
-  height: 350px;
-  background-color: slategray;
-  position: relative;
-}
-
-.video-cards__close-button {
-  all: unset;
-  background-image: url("../images/close-svgrepo-com.svg");
-  background-color: transparent;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  fill: white;
-  cursor: pointer;
-}
-
-.add-video-button {
-  all: unset;
-  cursor: pointer;
-  margin: 30px auto 0;
-  background-color: transparent;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
-.video-cards__delete {
-  width: 30px;
-  justify-self: flex-start;
-  cursor: pointer;
-}
-
-.video-cards__video-title {
-}
-
-.video-cards__info-section {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-}
+@import url("../blocks/popup/_active/popup_active.css");

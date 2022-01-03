@@ -1,0 +1,11 @@
+.popup__window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  background-color: slategray;
+  position: relative;
+}
